@@ -184,7 +184,9 @@ var jsPsychHtmlSliderSVOMulti = (function (jspsych) {
         var query_count = 0;
         const check_query_count = () => {
           query_count += 1;
-          if (query_count == 3){
+          // console.log(trial.questions.length);
+          console.log(query_count);
+          if (query_count == trial.questions.length){
             enable_button()
           }
         };
@@ -197,17 +199,39 @@ var jsPsychHtmlSliderSVOMulti = (function (jspsych) {
         const elements1 = document.querySelectorAll('[id^="jspsych-html-slider-response-response-Q"]');
         const sliderIds = Array.from(elements1).map(elements1 => elements1.id);
 
+        // sliderIds.forEach(sliderId => {
+        //   const slider = display_element.querySelector(`#${sliderId}`);
+      
+        //   if (slider) { 
+        //       slider.addEventListener("mousedown", check_query_count, { once: true });
+        //       slider.addEventListener("touchstart", check_query_count, { once: true });
+        //       slider.addEventListener("change", check_query_count, { once: true });
+        //   } else {
+        //       console.warn(`Slider with ID ${sliderId} not found.`);
+        //   }
+        // });
+
         sliderIds.forEach(sliderId => {
           const slider = display_element.querySelector(`#${sliderId}`);
       
-          if (slider) { 
-              slider.addEventListener("mousedown", check_query_count);
-              slider.addEventListener("touchstart", check_query_count);
-              slider.addEventListener("change", check_query_count);
+          if (slider) {
+            const handleEventOnce = (event) => {
+              check_query_count();
+              // Remove all event listeners after the first event is triggered
+              slider.removeEventListener("mousedown", handleEventOnce);
+              slider.removeEventListener("touchstart", handleEventOnce);
+              slider.removeEventListener("change", handleEventOnce);
+            };
+      
+            // Attach all listeners to the same handler
+            slider.addEventListener("mousedown", handleEventOnce);
+            slider.addEventListener("touchstart", handleEventOnce);
+            slider.addEventListener("change", handleEventOnce);
           } else {
-              console.warn(`Slider with ID ${sliderId} not found.`);
+            console.warn(`Slider with ID ${sliderId} not found.`);
           }
         });
+
 
       }
 
