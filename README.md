@@ -63,6 +63,9 @@ var trial = {
 
 Response data will be saved in an array format, similar to plugins like survey-multi-choice.
 
+## Citation
+Murphy, R. O., Ackermann, K. A., & Handgraaf, M. J. (2011). Measuring social value orientation. Judgment and Decision making, 6(8), 771-781.
+
 ## Lisence
 
 The MIT License (MIT)
