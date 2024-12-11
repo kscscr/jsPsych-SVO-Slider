@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="dist/jspsych.js"></script>
+    <script src="dist/plugin-html-slider-svo-multi.js"></script>
+    <link rel="stylesheet" href="dist/jspsych.css">
+    <link rel="stylesheet" href="dist/svo.css">
+  </head>
+  <body></body>
+  <script>
+
+    var jsPsych = initJsPsych({
+      default_iti: 250, 
+      on_finish: function() {
+        jsPsych.data.displayData();
+      }
+    });
+
+
+    var trial = {
+      type: jsPsychHtmlSliderSVOMulti,
+      questions: [
+        {
+          stimulus_upper: [85, 85, 85, 85, 85, 85, 85, 85, 85], 
+          stimulus_lower: [85, 76, 68, 59, 50, 41, 33, 24, 15]
+        }, 
+        {
+          stimulus_upper: [85, 87, 89, 91, 93, 94, 96, 98, 100], 
+          stimulus_lower: [15, 19, 24, 28, 33, 37, 41, 46, 50]
+        },
+        {
+          stimulus_upper: [50, 54, 59, 63, 68, 72, 76, 81, 85], 
+          stimulus_lower: [100, 98, 96, 94, 93, 91, 89, 87, 85]
+        }, 
+
+        {
+          stimulus_upper: [50, 54, 59, 63, 68, 72, 76, 81, 85], 
+          stimulus_lower: [100, 89, 79, 68, 58, 47, 36, 26, 15]
+        },
+        {
+          stimulus_upper: [100, 94, 88, 81, 75, 69, 63, 56, 50], 
+          stimulus_lower: [50, 56, 63, 69, 75, 81, 88, 94, 100]
+        }, 
+        {
+          stimulus_upper: [100, 98, 96, 94, 93, 91, 89, 87, 85], 
+          stimulus_lower: [50, 54, 59, 63, 68, 72, 76, 81, 85]
+        },
+      ],
+      require_movement: true,
+      label_upper: "あなた", 
+      label_lower: "相手", 
+      slider_width: 500,
+      prompt: '<p>あなたと見知らぬ人との間で資源分配を行います。あなたの好みの分配を選択してください。</p>'
+    };
+
+    jsPsych.run([trial]);
+
+  </script>
+</html>
