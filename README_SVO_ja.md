@@ -1,4 +1,7 @@
 # jsPsychでSVO Slider (Murphy et al., 2011) を実施するプラグイン
+### デモ
+[https://experiment.kscscr.com/Demo/SVO/jspsych-html-slider-SVO-Multi-ja.html](https://experiment.kscscr.com/Demo/SVO/jspsych-html-slider-SVO-Multi-ja.html)
+
 ## 使い方
 ### ファイルの配置
 以下の2つのファイルを、distフォルダに配置する。
@@ -59,7 +62,8 @@ var trial = {
 
 回答データは、survey-multi-choiceプラグインなどと同様に、配列の形で保存される。
 
-
+## Citation
+Murphy, R. O., Ackermann, K. A., & Handgraaf, M. J. (2011). Measuring social value orientation. Judgment and Decision making, 6(8), 771-781.
 
 ## ライセンス
 The MIT License (MIT)
