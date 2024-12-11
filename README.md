@@ -1,6 +1,8 @@
 # jsPsych Plugin for SVO Slider (Murphy et al., 2011)
-
+## Demo
+[https://experiment.kscscr.com/Demo/SVO/jspsych-html-slider-SVO-Multi.html](https://experiment.kscscr.com/Demo/SVO/jspsych-html-slider-SVO-Multi.html)
 ## How to Use
+
 ### File Placement
 Place the following two files in the "dist" folder:
 - Plugin: plugin-html-slider-svo-multi.js
