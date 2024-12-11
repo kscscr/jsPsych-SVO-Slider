@@ -5,7 +5,7 @@
     <script src="dist/jspsych.js"></script>
     <script src="dist/plugin-html-slider-svo-multi.js"></script>
     <link rel="stylesheet" href="dist/jspsych.css">
-    <link rel="stylesheet" href="svo.css">
+    <link rel="stylesheet" href="dist/svo.css">
   </head>
   <body></body>
   <script>
@@ -18,7 +18,7 @@
     });
 
 
-    var trial = {
+    var trial1 = {
       type: jsPsychHtmlSliderSVOMulti,
       questions: [
         {
@@ -47,14 +47,61 @@
           stimulus_lower: [50, 54, 59, 63, 68, 72, 76, 81, 85]
         },
       ],
-      require_movement: true,
+      require_movement: false,
       label_upper: "You</br>receive", 
       label_lower: "Other</br>receive", 
       slider_width: 500,
       prompt: '<p>You will allocate resources between yourself and others. </br>Please select the option that best matches your preference.</p>'
     };
 
-    jsPsych.run([trial]);
+    var trial2 = {
+      type: jsPsychHtmlSliderSVOMulti,
+      questions: [
+        {
+          stimulus_upper: [100, 96, 93, 89, 85, 81, 78, 74, 70], 
+          stimulus_lower: [50, 56, 63, 69, 75, 81, 88, 94, 100]
+        },
+        {
+          stimulus_upper: [90, 91, 93, 94, 95, 96, 98, 99, 100], 
+          stimulus_lower: [100, 99, 98, 96, 95, 94, 93, 91, 90]
+        },
+        {
+          stimulus_upper: [100, 94, 88, 81, 75, 69, 63, 56, 50], 
+          stimulus_lower: [70, 74, 78, 81, 85, 89, 93, 96, 100]
+        }, 
+        {
+          stimulus_upper: [100, 99, 98, 96, 95, 94, 93, 91, 90], 
+          stimulus_lower: [70, 74, 78, 81, 85, 89, 93, 96, 100]
+        }, 
+        {
+          stimulus_upper: [70, 74, 78, 81, 85, 89, 93, 96, 100], 
+          stimulus_lower: [100, 96, 93, 89, 85, 81, 78, 74, 70]
+        }, 
+        {
+          stimulus_upper: [50, 56, 63, 69, 75, 81, 88, 94, 100], 
+          stimulus_lower: [100, 99, 98, 96, 95, 94, 93, 91, 90]
+        },
+        {
+          stimulus_upper: [50, 56, 63, 69, 75, 81, 88, 94, 100], 
+          stimulus_lower: [100, 94, 88, 81, 75, 69, 63, 56, 50]
+        },
+        {
+          stimulus_upper: [100, 96, 93, 89, 85, 81, 78, 74, 70], 
+          stimulus_lower: [90, 91, 93, 94, 95, 96, 98, 99, 100]
+        },
+        {
+          stimulus_upper: [90, 91, 93, 94, 95, 96, 98, 99, 100], 
+          stimulus_lower: [100, 94, 88, 81, 75, 69, 63, 56, 50]
+        }
+      ],
+      require_movement: false,
+      label_upper: "You</br>receive", 
+      label_lower: "Other</br>receive", 
+      slider_width: 500,
+      prompt: '<p>You will allocate resources between yourself and others. </br>Please select the option that best matches your preference.</p>'
+    };
+
+    jsPsych.run([trial1, trial2]);
 
   </script>
 </html>
