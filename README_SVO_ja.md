@@ -1,4 +1,4 @@
-# jsPsychでSVO Slider (Murphy et al., 2011) を実施するプラグイン
+# jsPsychでSVO Slider Measure (Murphy et al., 2011) を実施するプラグイン
 ### デモ
 [https://experiment.kscscr.com/Demo/SVO/jspsych-html-slider-SVO-Multi-ja.html](https://experiment.kscscr.com/Demo/SVO/jspsych-html-slider-SVO-Multi-ja.html)
 
