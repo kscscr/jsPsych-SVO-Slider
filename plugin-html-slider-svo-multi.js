@@ -288,7 +288,7 @@ var jsPsychHtmlSliderSVOMulti = (function (jspsych) {
 
         // get response
         var choice_data = display_element.querySelectorAll(".jspsych-slider");
-        choice_data = Array.from(choice_data).map(choice_data => choice_data.value);
+        choice_data = Array.from(choice_data).map(choice_data => Number(choice_data.value));
         response.response = choice_data;
 
         if (trial.response_ends_trial) {
