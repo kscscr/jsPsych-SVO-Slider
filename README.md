@@ -1,4 +1,4 @@
-# jsPsych Plugin for SVO Slider (Murphy et al., 2011)
+# jsPsych Plugin for SVO Slider Measure (Murphy et al., 2011)
 ## Demo
 [https://experiment.kscscr.com/Demo/SVO/jspsych-html-slider-SVO-Multi.html](https://experiment.kscscr.com/Demo/SVO/jspsych-html-slider-SVO-Multi.html)
 ## How to Use
