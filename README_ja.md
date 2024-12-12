@@ -66,10 +66,10 @@ var trial = {
         },
       ],
       require_movement: true,
-      label_upper: "You</br>receive", 
-      label_lower: "Other</br>receive", 
+      label_upper: "あなた", 
+      label_lower: "あいて", 
       slider_width: 500,
-      prompt: '<p>You will allocate resources between yourself and others. </br>Please select the option that best matches your preference.</p>'
+      prompt: '<p>あなたと見知らぬ人との間で資源分配を行います。あなたの好みの分配を選択してください。</p>'
 };
 ```
 回答データは、survey-multi-choiceプラグインなどと同様に、配列の形で保存される。
