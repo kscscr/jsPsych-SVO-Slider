@@ -72,6 +72,13 @@ var trial = {
       prompt: '<p>あなたと見知らぬ人との間で資源分配を行います。あなたの好みの分配を選択してください。</p>'
 };
 ```
+
+- questions：上下にそれぞれ表示されるポイントです。stimulus_upperとstimulus_lowerを作成し、数字を9個の配列で入れます。
+- require_movement：スライダーを一度動かさないと「次へ」ボタンを押せないようにできます。
+- label_upper (label_lower)：上（下）に表示されるラベルです。
+- button_label：「次へ」ボタンのテキストをカスタムできます
+- prompt：一番上に表示される説明文です。
+
 回答データは、survey-multi-choiceプラグインなどと同様に、配列の形で保存される。
 
 
