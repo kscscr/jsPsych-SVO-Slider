@@ -1,8 +1,19 @@
 # jsPsych Plugin for SVO Slider Measure (Murphy et al., 2011)
-## Demo
-[https://experiment.kscscr.com/Demo/SVO/jspsych-html-slider-SVO-Multi.html](https://experiment.kscscr.com/Demo/SVO/jspsych-html-slider-SVO-Multi.html)
-## How to Use
 
+## About this program
+The "plugin-html-slider-svo-multi.js" is a plugin for implementing the SVO Slider Measure (Murphy et al., 2011) in jsPsych. This program was developed based on the plugin-html-slider-response.js.
+
+### Demo
+[https://experiment.kscscr.com/Demo/SVO/jspsych-html-slider-SVO-Multi.html](https://experiment.kscscr.com/Demo/SVO/jspsych-html-slider-SVO-Multi.html)
+
+### Usage Example
+![SVO Slider Experiment](pic/image_svo.png "SVO Slider Experiment")
+As shown in the image, participants can respond to the SVO Slider using an actual slider.
+
+![SVO Slider Result](pic/image_result.png "SVO Slider Result")
+The response data is stored in an array format under response.
+
+## How to Use
 ### File Placement
 Place the following two files in the "dist" folder:
 - Plugin: plugin-html-slider-svo-multi.js
@@ -64,6 +75,14 @@ var trial = {
 ```
 
 Response data will be saved in an array format, similar to plugins like survey-multi-choice.
+
+## Disclaimer and Contact Information
+We are not responsible for any damages or disadvantages arising from the use of this program. Please use it at your own risk.
+
+If you discover any bugs, we would appreciate it if you could report them using the contact details below
+
+- X(Twitter): [@kscscr](https://x.com/kscscr)
+- Email：ks1760osakasg[at]gmail.com
 
 ## Citation
 Murphy, R. O., Ackermann, K. A., & Handgraaf, M. J. (2011). Measuring social value orientation. Judgment and Decision making, 6(8), 771-781.
