@@ -1,6 +1,17 @@
 # jsPsychでSVO Slider Measure (Murphy et al., 2011) を実施するプラグイン
+
+## プログラムについて
+"plugin-html-slider-svo-multi.js"は、jsPsychでSVO Slider Measure (Murphy et al., 2011)を実施するためのプラグインです。このプログラムは、plugin-html-slider-response.jsを基に作成しました。
+
 ### デモ
 [https://experiment.kscscr.com/Demo/SVO/jspsych-html-slider-SVO-Multi-ja.html](https://experiment.kscscr.com/Demo/SVO/jspsych-html-slider-SVO-Multi-ja.html)
+
+### イメージ
+![SVO Sliderの実験画面](pic/image_svo_ja.png "SVO Sliderの実験画面")
+画像のように、実際のスライダーを用いて、SVO Sliderに回答することができます。
+
+![SVO Sliderの実験画面](pic/image_svo_ja.png "SVO Sliderの実験画面")
+回答データは、responseに配列の形で保存されます。
 
 ## 使い方
 ### ファイルの配置
@@ -59,8 +70,15 @@ var trial = {
       prompt: '<p>You will allocate resources between yourself and others. </br>Please select the option that best matches your preference.</p>'
 };
 ```
-
 回答データは、survey-multi-choiceプラグインなどと同様に、配列の形で保存される。
+
+
+## 免責事項や連絡先
+本プログラムの使用により生じたいかなる損害や不利益について一切その責任を負いません。自己責任のもとで利用してください。
+
+バグを発見した際には、以下の連絡先に報告してもらえると助かります。
+- X(Twitter): [@kscscr](https://x.com/kscscr)
+- メールアドレス：ks1760osakasg[at]gmail.com
 
 ## Citation
 Murphy, R. O., Ackermann, K. A., & Handgraaf, M. J. (2011). Measuring social value orientation. Judgment and Decision making, 6(8), 771-781.
