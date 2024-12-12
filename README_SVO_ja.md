@@ -10,7 +10,7 @@
 ![SVO Sliderの実験画面](pic/image_svo_ja.png "SVO Sliderの実験画面")
 画像のように、実際のスライダーを用いて、SVO Sliderに回答することができます。
 
-![SVO Sliderの実験画面](pic/image_svo_ja.png "SVO Sliderの実験画面")
+![SVO Sliderのデータ](pic/image_result_ja.png "SVO Sliderのデータ")
 回答データは、responseに配列の形で保存されます。
 
 ## 使い方
