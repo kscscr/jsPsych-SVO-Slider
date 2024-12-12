@@ -10,9 +10,11 @@ Place the following two files in the "dist" folder:
 
 ## How to Run the Program
 Add the following lines to the <head> tag of your HTML file:
+
+For example
 ```
 <script src="dist/plugin-html-slider-svo-multi.js"></script>
-<link rel="stylesheet" href="svo.css">
+<link rel="stylesheet" href="dist/svo.css">
 ```
 
 Experiment Procedure
