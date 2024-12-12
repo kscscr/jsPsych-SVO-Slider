@@ -76,6 +76,12 @@ var trial = {
 };
 ```
 
+- questions: The points displayed at the top and bottom. Create stimulus_upper and stimulus_lower and provide an array of 9 numbers.
+- require_movement: Ensures the "Next" button cannot be clicked unless the slider has been moved at least once.
+- label_upper (or label_lower): The labels displayed at the top (or bottom).
+- button_label: Allows customization of the text on the "Next" button.
+- prompt: The instructional text displayed at the very top.
+
 Response data will be saved in an array format, similar to plugins like survey-multi-choice.
 
 ## Disclaimer and Contact Information
