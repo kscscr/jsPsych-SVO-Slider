@@ -1,5 +1,7 @@
 # jsPsych Plugin for SVO Slider Measure (Murphy et al., 2011)
 
+日本語版は[こちら](https://github.com/kscscr/jsPsych-SVO-Slider/blob/main/README_ja.md)
+
 ## About this program
 The "plugin-html-slider-svo-multi.js" is a plugin for implementing the SVO Slider Measure (Murphy et al., 2011) in jsPsych. This program was developed based on the plugin-html-slider-response.js.
 
