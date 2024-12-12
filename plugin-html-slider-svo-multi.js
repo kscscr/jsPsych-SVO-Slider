@@ -49,14 +49,14 @@ var jsPsychHtmlSliderSVOMulti = (function (jspsych) {
     name: "html-slider-svo-multi",
     version: _package.version,
     parameters: {
-      stimulus_upper: {
-        type: jspsych.ParameterType.HTML_STRING,
-        default: '85, 85, 85, 85, 85, 85, 85, 85, 85'
-      },
-      stimulus_lower: {
-        type: jspsych.ParameterType.HTML_STRING,
-        default: '85, 85, 85, 85, 85, 85, 85, 85, 85'
-      },
+      // stimulus_upper: {
+      //   type: jspsych.ParameterType.HTML_STRING,
+      //   default: '85, 85, 85, 85, 85, 85, 85, 85, 85'
+      // },
+      // stimulus_lower: {
+      //   type: jspsych.ParameterType.HTML_STRING,
+      //   default: '85, 85, 85, 85, 85, 85, 85, 85, 85'
+      // },
       questions: {
         type: jspsych.ParameterType.COMPLEX,
         array: true,
@@ -140,9 +140,9 @@ var jsPsychHtmlSliderSVOMulti = (function (jspsych) {
     trial(display_element, trial) {
       var half_thumb_width = 7.5;
       // var tmp1 = '85, 85, 85, 85, 85, 85, 85, 85, 85';
-      var tmp_ary1 = trial.stimulus_upper.split(',');
+      // var tmp_ary1 = trial.stimulus_upper.split(',');
       // var tmp2 = '85, 76, 68, 59, 50, 41, 33, 24, 15';
-      var tmp_ary2 = trial.stimulus_lower.split(',');
+      // var tmp_ary2 = trial.stimulus_lower.split(',');
       
       var html = '<div id="jspsych-html-slider-response-wrapper" style="margin: 100px 0px;';
       html += 'width:' + trial.slider_width + 'px; ">';
